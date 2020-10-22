@@ -8,13 +8,13 @@ Welcome to the VIAplanner API. The API is written with Express to provide maximu
 
 **Notes:**
 
-1. The API is limited to **only** VIAplanner developers. Thus, an API key is required. The reason for doing so is to maximize performance for our timetable planner
-2. Currently, the API only contains UTM data. However, we will expand it in the future to house UTSG and UTSC data as well
+1. The API is limited to **only** VIAplanner developers. The reason for doing so is to maximize performance for our timetable planner
+2. Currently, the API now contains information for all 3 UofT campuses
 3. The API is still under development. Thus, the routes are likely to change
-4. If you wish to use this API, please contact us at our [GitHub](https://github.com/UTM-Hacklab/VIAplanner)
+4. If you wish to use this API, please contact us at our [GitHub](https://github.com/VIAplanner/via-timetable)
 
 ## High-level overview
-![](./backend-architecture.png)
+![](../assets/API-pics/backend-architecture.png)
 
 ## Query Guide
 
@@ -23,7 +23,7 @@ https://api.viaplanner.ca (this will take you to the docs)
 
 ### Get all courses
 **method:** get <br/>
-**usage:** https://api.viaplanner.ca/courses?api_key=api_key <br/>
+**usage:** https://api.viaplanner.ca/courses <br/>
 **schema:** see [**Data Structure 9**](#_9-all-courses) <br/>
 **return value:**
 - success: an array containing objects of all courses in the data base
@@ -31,7 +31,7 @@ https://api.viaplanner.ca (this will take you to the docs)
 
 ### Get a courses
 **method:** get <br/>
-**usage:** https://api.viaplanner.ca/courses/courseCode?api_key=api_key <br/>
+**usage:** https://api.viaplanner.ca/courses/courseCode <br/>
 **schema:** see [**Data Structures 1-3**](#_1-course) <br/>
 **return value:** 
 - success: an object containing the data of the specified course
@@ -39,7 +39,7 @@ https://api.viaplanner.ca (this will take you to the docs)
 
 ### Get the search bar value 
 **method:** get <br/>
-**usage:** https://api.viaplanner.ca/courses/searchbar?api_key=api_key <br/>
+**usage:** https://api.viaplanner.ca/courses/searchbar <br/>
 **schema:** see [**Data Structure 8**](#_8-course-search-bar) <br/>
 **return value:** 
 - success: an array containing objects with the courseCode and name of every course in the database 
@@ -47,7 +47,7 @@ https://api.viaplanner.ca (this will take you to the docs)
 
 ### Create a courses
 **method:** post <br/>
-**usage:** https://api.viaplanner.ca/courses?api_key=api_key <br/>
+**usage:** https://api.viaplanner.ca/courses <br/>
 **schema:** see [**Data Structures 1-3**](#_1-course) <br/>
 **return value:** 
 - success: an object with a message saying the course was created

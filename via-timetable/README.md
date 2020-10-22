@@ -1,64 +1,60 @@
 ---
 sidebar: auto
 ---
-# Timetable Planner
+# Timetable Algorithm
 
-A web app that helps UofT students plan their courses to generate their optimal timetable. 
+A web app that helps UofT students plan their courses by generating a optimal timetable.
 
-The timetable planner allows students to enter their course load and get back a timetable that fits their needs. The vision for the timetable planner includes taking student preferences into account such as: 
-
+The timetable planner allows students to enter their course load and get back a timetable that fits their needs. The functions for the timetable planner are: 
 - How early students wish to start and end classes
 - What days students would like to take off
 - What times students would prefer gap time and breaks
-
+- Preference on the delievery method (if available)
 
 ## Overview
 
-![timetable-journey](./Timetable-journey.png)
+User's starting view:
 
-Once the user selects the courses from the Course Guide:
+![blanktimetable](../assets/VIAtimetable-pics/startTimetable.JPG)
 
-![coursechosing](./coursechosing.png)
 
-The user views the timetable:
+Once the user selects the courses from the search bar, the course will be added automatically with the first available time under the given constraints:
 
-The timetable will display whether or not if the selected courses have a valid time, that is no conflict for all courses.
+![coursechosing](../assets/VIAtimetable-pics/img1.gif)
 
- - Valid:
- 
-![timetable](./timetable.png)
+The user can choose to lock certain times:
+
+![lockTime](../assets/VIAtimetable-pics/slide3.gif)
+
+As well as selecting the delievery method:
+
+![delievery](../assets/VIAtimetable-pics/delievery.JPG)
+
+If the course can not be added to the timetable, a message will popup telling the user the selection is unavailable:
 
  - Invalid:
  
-![error1](./error1.png)
-
-There are serveral preferences that the user can select to optimize the timetable:
-
-![timetableconstraint](./timetableconstraint.png)
+![error1](../assets/VIAtimetable-pics/invalid.JPG)
 
 
- - Minimize/Maximize idle time: The user can maximize or minimize the gap time between courses.
- - Days off: The user can select the day(s) off so there will be no course appear on that day.
- - Avoid Morning/Evening Class: The user can choose whether if they want to have courses in the morning or evening.
- 
 The timetable will return invalid and displays a message if the constraints are unreachable.
 
-![error2](./error2.png)
+![error2](../assets/VIAtimetable-pics/error2.png)
 
 The user can also choose to lock certain course times. 
 
 When preferences are made, those times will not be changed.
 
-![lock1](./lock1.png)
+![lock1](../assets/VIAtimetable-pics/l Algorithmk1.png)
 
-after a course is locked and a preference is being made:
+after a course is locked and a preference is being made:too much
 
-![lock2](./lock2.png)
+![lock2](../assets/VIAtimetable-pics/lSolutionpng)
 
 ## Roadmap for the Timetable Algorithm
-<!---
+<!---eitheramount  oto reduve therecduvce the computation
 - Introduce what the timetable algorithm is for
-- Tell a story about how the algorithm evolves
+- Tell a story about the algorithm evo by takinglves
 - Have a heading for each optimization in the roadmap
 - Start with base conflict check -> invalid times -> idle time max/min -> locked courses
 --->
