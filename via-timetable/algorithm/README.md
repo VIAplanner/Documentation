@@ -3,49 +3,24 @@ sidebar: auto
 ---
 # Timetable Algorithm
 
-A web app that helps UofT students plan their courses by generating a optimal timetable.
+The algorithm behind VIAtimetable that helps UofT students plan their courses by generating a optimal timetable.
 
 The timetable planner allows students to enter their course load and get back a timetable that fits their needs. The functions for the timetable planner are: 
 - How early students wish to start and end classes
 - What days students would like to take off
 - What times students would prefer gap time and breaks
-- Preference on the delievery method (if available)
+- Preference on the delievery method (if the options are available)
 
-## Overview
-
-User's starting view:
-
-![blanktimetable](../assets/VIAtimetable-pics/startTimetable.JPG)
- 
-
-Once the user selects the courses from the search bar, the course will be added automatically with the first available time under the given constraints:
-
-![coursechosing](../assets/VIAtimetable-pics/img1.gif)
-
-The user can choose to lock certain times:
-
-![lockTime](../assets/VIAtimetable-pics/slide3.gif)
-
-As well as selecting the delievery method:
-
-![delievery](../assets/VIAtimetable-pics/delievery.JPG)
-
-If the course can not be added to the timetable, a message will popup telling the user the selection is unavailable:
-
- - Invalid:
- 
-![error1](../assets/VIAtimetable-pics/invalid.JPG)
-
-## Roadmap for the Timetable Algorithm
+## Implementation of the Timetable Algorithm
 <!---eitheramount  oto reduve therecduvce the computation
 - Introduce what the timetable algorithm is for
 - Tell a story about the algorithm evo by takinglves
 - Have a heading for each optimization in the roadmap
 - Start with base conflict check -> invalid times -> idle time max/min -> locked courses
 --->
-The timetable algorithm takes in a set of course names and transforms into a list of timetables. Then the user can optimize the timetable to fit their preference.
+The timetable algorithm takes in a set of course and generate if possible, a valid timetable with the earliest time available. Then the user can optimize the timetable to fit their preference.
 
-The algorithm starts out by checking if the given sections conflict with each other. The algorithm will return true or false depending on whether or not a conflict exists.
+The algorithm starts out by seperating the courses into fall and winter section.
 
 After checking for basic validity, we can optimize our timetable by adding constraints to it.
 

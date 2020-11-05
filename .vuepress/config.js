@@ -5,16 +5,20 @@ module.exports = {
     themeConfig: {
         logo: "/logo.png",
         nav: [
-            { text: "Home",
+            { text: "Home", link: "/" },
+            {
+                text: "VIAtimetable",
                 items: [
-                    {text: "test 1", link: "/"},
-                ]  
+                    { text: "Front End", link: "/via-timetable/front-end/" },
+                    { text: "API", link: "/via-timetable/api/" },
+                    { text: "Algorithm", link: "/via-timetable/algorithm/" },
+                    { text: "State Management", link: "/via-timetable/statemanagement"},
+                ],
             },
-            { text: "API", link: "/via-api/" },
-            { text: "VIAtimetable", link: "/via-timetable/" },
             { text: "VIAcalendar", link: "/via-calendar/" },
             { text: "VIAevent", link: "/via-event/" },
             { text: "Application", link: "https://viaplanner.ca/" },
+            { text: "Github Repo", link: "https://github.com/VIAplanner" },
         ],
     },
 };

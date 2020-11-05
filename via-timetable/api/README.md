@@ -14,7 +14,7 @@ Welcome to the VIAplanner API. The API is written with Express to provide maximu
 4. If you wish to use this API, please contact us at our [GitHub](https://github.com/VIAplanner/via-timetable)
 
 ## High-level overview
-![](../assets/API-pics/backend-architecture.png)
+![](../../assets/API-pics/backend-architecture.png)
 
 ## Query Guide
 
