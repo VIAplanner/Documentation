@@ -34,7 +34,7 @@ Futhermore, this will improve UofT's reputation since this tool will modernize a
 
 The first areas of student experience we're looking to enhance are course selection and timetable planning.
 
-We envision the following user journey for a student: ![](assets/User_Experience.png)
+We envision the following user journey for a student: ![](./assets/user_experience.png)
 
 The two components we identified to build this system are the [Course Guide](/course-guide/) and the [Timetable Planner](/timetable-planner/)
 

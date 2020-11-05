@@ -5,7 +5,11 @@ module.exports = {
     themeConfig: {
         logo: "/logo.png",
         nav: [
-            { text: "Home", link: "/" },
+            { text: "Home",
+                items: [
+                    {text: "test 1", link: "/"},
+                ]  
+            },
             { text: "API", link: "/via-api/" },
             { text: "VIAtimetable", link: "/via-timetable/" },
             { text: "VIAcalendar", link: "/via-calendar/" },
