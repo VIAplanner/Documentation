@@ -16,7 +16,7 @@ The timetable planner allows students to enter their course load and get back a 
 User's starting view:
 
 ![blanktimetable](../assets/VIAtimetable-pics/startTimetable.JPG)
-
+ 
 
 Once the user selects the courses from the search bar, the course will be added automatically with the first available time under the given constraints:
 
@@ -35,21 +35,6 @@ If the course can not be added to the timetable, a message will popup telling th
  - Invalid:
  
 ![error1](../assets/VIAtimetable-pics/invalid.JPG)
-
-
-The timetable will return invalid and displays a message if the constraints are unreachable.
-
-![error2](../assets/VIAtimetable-pics/error2.png)
-
-The user can also choose to lock certain course times. 
-
-When preferences are made, those times will not be changed.
-
-![lock1](../assets/VIAtimetable-pics/l Algorithmk1.png)
-
-after a course is locked and a preference is being made:too much
-
-![lock2](../assets/VIAtimetable-pics/lSolutionpng)
 
 ## Roadmap for the Timetable Algorithm
 <!---eitheramount  oto reduve therecduvce the computation
