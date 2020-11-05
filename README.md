@@ -18,9 +18,9 @@ When you enter a well-run tech organization like Google, you’re met with a sui
 
 These tools were created by Googlers for Googlers. UofT students could make use of tools made by other UofT students that would allow them to do things like:
 
-- Suggest timetables that optimize for their preferred timings 
-- Plan for courses based on course evaluation metrics that they care about
-- Write plugins to expand the core functionality with their creative ideas
+- Suggest timetables that optimize for their preferred timings
+- Generate calendar based on student's timetable and relavent events
+- A platform that offers various club events
 
 Fundamental problem we are trying to solve : 
 
@@ -34,7 +34,8 @@ Futhermore, this will improve UofT's reputation since this tool will modernize a
 
 The first areas of student experience we're looking to enhance are course selection and timetable planning.
 
-We envision the following user journey for a student: ![](assets/User_Experience.png)
+We envision the following user journey for a student: 
+![User Journey](./assets/user_journey.png)
 
 The two components we identified to build this system are the [Course Guide](/course-guide/) and the [Timetable Planner](/timetable-planner/)
 
