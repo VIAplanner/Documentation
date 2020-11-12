@@ -3,7 +3,7 @@ home: true
 heroImage: /logo-with-text.png
 heroText: 
 tagline: VIAplanner is a tool designed by students at the University of Toronto to help the community. We desire to enhance the course selection process.
-footer: MIT Licensed
+footer: GNU V2 Licensed
 --- 
 
 <CBtn></CBtn>
@@ -18,9 +18,9 @@ When you enter a well-run tech organization like Google, you’re met with a sui
 
 These tools were created by Googlers for Googlers. UofT students could make use of tools made by other UofT students that would allow them to do things like:
 
-- Suggest timetables that optimize for their preferred timings 
-- Plan for courses based on course evaluation metrics that they care about
-- Write plugins to expand the core functionality with their creative ideas
+- Suggest timetables that optimize for their preferred timings
+- Generate calendar based on student's timetable and relavent events
+- A platform that offers various club events
 
 Fundamental problem we are trying to solve : 
 
@@ -32,14 +32,18 @@ Futhermore, this will improve UofT's reputation since this tool will modernize a
 
 ## Implementation
 
-The first areas of student experience we're looking to enhance are course selection and timetable planning.
+### VIA Timetable
+VIA Timetable is a module under VIA planner that aims to provide the best course selection experience. Unlike other tools such as Griddy or UTM Timetable, our users **do not** need to select the times for their courses, they simply need to search and click on their desired courses. With the combined power of our algorithm and comprehensive database of all 3 UofT campuses' courses, we are able to generate a conflict-free timetable.
 
-We envision the following user journey for a student:
+You can learn more about it [here](/via-timetable/front-end)
 
-![User Journey](./course-guide/user-journey.png)
+### VIA Calendar
+VIA Calendar is a module under VIA planner that serves as an extension of VIA Timetable. We envision the user being able to connect their google calendar and directly move their timetable from VIA Timetable into their calendar. Other features could be sharing your timetable with other VIA planner users.
 
-The two components we identified to build this system are the [Course Guide](/course-guide/) and the [Timetable Planner](/timetable-planner/)
+You can learn more about it [here](/via-calendar/)
 
-We then identified that the two components in our system required data that was scattered across various UofT web services. Some of this data had to be scraped, while others were available through APIs. 
+### VIA Event
 
-The third component that emerged was the [Unified Backend](/unified-backend/). This API would provide our apps with unified access to the scattered UofT course data. This API would also allow students to make use of the data to write plugins to expand the core functionality with their creative ideas. 
+VIA Event is a module under VIA planner that aims to displays all events at UofT. We envision similar functionality to platforms such as Evenbrite where users could view, add, comment, and share different events. 
+
+You can learn more about it [here](/via-event/)
